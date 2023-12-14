@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KBD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    .info {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .team {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .team img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .team h2 {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Korea Baseball Data</h1>
+  </header>
+  
+  <div class="container">
+    <!-- 선수 검색을 위한 폼 -->
+    <form>
+      <label for="team">팀 선택:</label>
+      <select id="team" name="team">
+        <option value="team1">LG</option>
+        <option value="team2">KT</option>
+        <option value="team3">SSG</option>
+        <option value="team4">NC</option>
+        <option value="team5">두산</option>
+        <option value="team6">KIA</option>
+        <option value="team7">롯데</option>
+        <option value="team8">삼성</option>
+        <option value="team9">한화</option>
+        <option value="team10">키움</option>
+
+      </select>
+      
+      <label for="position">포지션 선택:</label>
+      <select id="position" name="position">
+        <option value="pitcher">투수</option>
+        <option value="catcher">포수</option>
+        <option value="pitcher">내야수</option>
+        <option value="catcher">외야수</option>
+        
+      </select>
+
+      <label for="name">선수</label>
+      <select id="team" name="team">
+        <option value="name1">이름</option>
+        <option value="name1">김건</option>
+        <option value="name2">노시환</option>
+        <option value="name3">김민기</option>
+        <option value="name4">김예준</option>
+        <option value="name5">김인환</option>
+        <option value="name6">김태연</option>
+        <option value="name7">노석진</option>
+        <option value="name8">문현빈</option>
+        <option value="name9">박정현</option>
+        <option value="name10">오선진</option>
+        <option value="name11">이도윤</option>
+        <option value="name12">이민준</option>
+        <option value="name13">이상혁</option>
+        <option value="name14">이성곤</option>
+        <option value="name15">정민규</option>
+        <option value="name16">정은원</option>
+        <option value="name17">조한민</option>
+        <option value="name18">최원준</option>
+        <option value="name19">하주석</option>
+        <option value="name20">한경빈</option>
+        
+      </select>
+    </form>
+  <button onclick="location.href='http://localhost:8501/'">검색</button>
+
+<script>
+  function redirectToProjectPage() {
+    document.getElementById("myForm").submit();
+  }
+</script>
+    <!-- 기존의 팀 정보 -->
+    <div class="info">
+      <div class="team">
+        <img src="야구구단로고/club_emblem_hanwha.png" alt="Team 1 Logo">
+        <h2>한화 Eagles</h2>
+      </div>
+      <p>대전 한화 이글스파크 </p>
+    </div>
+    <div class="info">
+      <div class="team">
+        <img src="야구구단로고/bi_game_ssg.png" alt="Team 2 Logo">
+        <h2>SSG Landers</h2>
+      </div>
+      <p>인천 SSG 랜더스필드</p>
+    </div>
+    <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_doosan.png" alt="Team 3 Logo">
+          <h2>두산 Bears</h2>
+        </div>
+        <p>잠실 야구장</p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_kia.png" alt="Team 4 Logo">
+          <h2>기아 Tigers</h2>
+        </div>
+        <p> 광주기아챔피언스필드</p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_kiwoom.png" alt="Team 5 Logo">
+          <h2>키움 Heroes</h2>
+        </div>
+        <p>고척 스카이돔</p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_kt.png" alt="Team 6 Logo">
+          <h2>KT WIZ</h2>
+        </div>
+        <p>수원 KT WIZ파크 </p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_lg.png" alt="Team 7 Logo">
+          <h2>LG TWINS</h2>
+        </div>
+        <p> 잠실 야구장</p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_lotte-1.png" alt="Team 8 Logo">
+          <h2>롯데 GIANTS</h2>
+        </div>
+        <p> 부산 사직구장</p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_nc.png" alt="Team 9 Logo">
+          <h2> NC DINOS</h2>
+        </div>
+        <p> 창원 NC파크</p>
+      </div>
+      <div class="info">
+        <div class="team">
+          <img src="야구구단로고/club_emblem_samsung.png" alt="Team 10 Logo">
+          <h2> 삼성 LIONS</h2>
+        </div>
+        <p>대구삼성라이온즈파크 </p>
+
+  </div>
+</body>
+</html>

@@ -2,6 +2,24 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+def main():
+    st.title('파일 업로드 및 시각화 예제')
+
+    # 파일 경로 설정
+    base_path = os.path.dirname(__file__)  # 현재 스크립트 파일의 경로
+    file_path = os.path.join(base_path, 'your_folder_name', 'your_file.csv')  # 파일 경로 조합
+
+    # 파일 존재 여부 확인
+    if not os.path.exists(file_path):
+        st.error("파일을 찾을 수 없습니다.")
+        return
+
+    # 파일 업로드
+    data = pd.read_csv(file_path)
+
+if __name__ == '__main__':
+    main()
+
 #노시환 개인프로필 
 st.write('# 노시환 ')
 # 선수 정보
